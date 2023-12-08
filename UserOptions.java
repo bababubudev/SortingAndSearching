@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class UserOptions {
@@ -42,5 +43,27 @@ public class UserOptions {
     System.out.print("In the list are values 0, ..., " + (length - 1) + ";");
     System.out.print(" which value would you like to search with " + type + "? ");
     return getInput(0, length - 1);
+  }
+
+  public int[] GetRandomInts(String type) {
+    System.out.println("\nData set before " + type + ": ");
+    Random random = new Random();
+    int[] randomNums = new int[10];
+
+    for (int i = 0; i < 10; i++) {
+      randomNums[i] = random.nextInt(-100, 100);
+      System.out.print(randomNums[i] + " ");
+    }
+
+    System.out.println();
+    return randomNums;
+  }
+
+  public void ShowSortedResults(String type, int[] values) {
+    System.out.println("\nData set after " + type + ": ");
+    for (int i = 0; i < values.length; i++) {
+      System.out.print(values[i] + " ");
+    }
+    System.out.println("\n");
   }
 }

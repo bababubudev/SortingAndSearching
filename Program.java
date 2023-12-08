@@ -9,17 +9,22 @@ class Program {
   };
 
   public static void main(String[] args) {
-    String menuOption = "";
-
     do {
       uo.showMainMenu();
-      menuOption = uo.getStrInput().toLowerCase();
+      String menuOption = uo.getStrInput().toLowerCase();
 
-      int searchOption = Integer.parseInt(menuOption);
-      SearchAlgorithm<String> so = new SearchAlgorithm<String>(searchOption, values);
+      if (menuOption.toLowerCase().equals("q")) {
+        break;
+      }
 
-      so.searchByInput();
-    } while (!menuOption.toLowerCase().equals("q"));
+      try {
+        int searchOption = Integer.parseInt(menuOption);
+        Algorithms<String> so = new Algorithms<String>(searchOption, values);
+
+        so.searchByInput();
+      } catch (NumberFormatException e) {
+        System.out.println("\nNot found\n");
+      }
+    } while (true);
   }
-
 }
