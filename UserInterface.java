@@ -63,7 +63,7 @@ public class UserInterface<T extends Comparable<T>> {
         break;
       case 5:
         flaggable = true;
-        showOptionFive(1000, 10);
+        showOptionFive(100, 10);
         break;
       case 6:
         flaggable = false;
@@ -147,13 +147,13 @@ public class UserInterface<T extends Comparable<T>> {
     }
 
     System.out.println(header);
-    // System.out.println(bubbleCompare);
+    System.out.println(bubbleCompare);
     System.out.println(bubbleMs);
-    // System.out.println(quickCompare);
+    System.out.println(quickCompare);
     System.out.println(quickMs);
-    // System.out.println(selectCompare);
+    System.out.println(selectCompare);
     System.out.println(selectMs);
-    // System.out.println(mergeCompare);
+    System.out.println(mergeCompare);
     System.out.println(mergeMs);
     System.out.println();
   }
