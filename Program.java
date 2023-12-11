@@ -19,9 +19,9 @@ class Program {
 
       try {
         int searchOption = Integer.parseInt(menuOption);
-        Algorithms<String> so = new Algorithms<String>(searchOption, values);
+        UserInterface<String> ui = new UserInterface<String>(searchOption, values);
 
-        so.searchByInput();
+        ui.callByInput();
       } catch (NumberFormatException e) {
         System.out.println("\nNot found\n");
       }
