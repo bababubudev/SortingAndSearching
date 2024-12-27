@@ -1,3 +1,4 @@
+
 # Searching and Sorting Algorithm Testbed
 
 ## Overview
@@ -58,6 +59,12 @@ This program provides an interactive testbed for experimenting with and comparin
   - Execution times for all sorting algorithms
   - Number of comparisons for each algorithm
   - Data for different input sizes (1000 to 10000 elements)
+
+## Demo
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/74d5083e-396d-4782-9f45-b06fd898784b" alt="Sorting Algo Demo">
+</p>
 
 ## Implementation Details
 
