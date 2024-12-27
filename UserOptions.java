@@ -12,6 +12,7 @@ public class UserOptions {
     System.out.println("3) O(n^2) type of sorting");
     System.out.println("4) O(n*log(n)) type of sorting");
     System.out.println("5) Sorting performance");
+    System.out.println("6) Log performance report");
     System.out.println();
     System.out.println("q/Q) Quit");
     System.out.print("\nYour choice: ");
